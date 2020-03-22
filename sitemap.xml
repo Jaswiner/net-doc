@@ -3,17 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jaswine.com/docs/net/docs/install/base/</loc>
+    <loc>https://jaswine.com/docs/net/docs/pro/arp/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/docs/net/docs/install/docker/</loc>
+    <loc>https://jaswine.com/docs/net/docs/pro/dhcp/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/docs/net/docs/install/yum/</loc>
+    <loc>https://jaswine.com/docs/net/docs/pro/dns/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/net/docs/pro/http/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/net/docs/pro/https/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/net/docs/pro/ip/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/net/docs/pro/rtmp/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/net/docs/pro/rtsp/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/net/docs/pro/tcp/</loc>
     <priority>0</priority>
   </url>
   

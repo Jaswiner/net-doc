@@ -14,17 +14,17 @@
   
     计算机网络协议
   
- | Net Doc</title>
+ | 计算机网络协议</title>
 
 
 
-<link rel="stylesheet" href="/docs/net/book.min.b7d5ee4f671b06dde5fd61ab409a54048ba7759e99fed39ac32a7be45d4d92cd.css">
+<link rel="stylesheet" href="/docs/net/book.min.4a67c924865f7c7b6a18b71c1fab21271aa117784134ae2f5887b98c6e90a2b3.css">
 
 
 <link rel="icon" href="/docs/net/favicon.png" type="image/x-icon">
 
 
-<link rel="alternate" type="application/rss+xml" href="https://jaswine.com/docs/net/index.xml" title="Net Doc" />
+<link rel="alternate" type="application/rss+xml" href="https://jaswine.com/docs/net/index.xml" title="计算机网络协议" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -40,7 +40,7 @@ https://github.com/alex-shpak/hugo-book
     <aside class="book-menu fixed">
       <nav>
 <h2 class="book-brand">
-  <a href="https://jaswine.com/docs/net">Net Doc</a>
+  <a href="https://jaswine.com/docs/net">计算机网络协议</a>
 </h2>
 
 
@@ -57,23 +57,33 @@ https://github.com/alex-shpak/hugo-book
   </style>
 
 <ul>
-<li><a href="/docs/net/docs/install/base/"><strong>安装</strong></a>
+<li><strong><em>应用层协议</em></strong>
 
 <ul>
-<li><a href="/docs/net/docs/install/yum/">YUM安装</a></li>
-<li><a href="/docs/net/docs/install/docker/">Docker安装</a></li>
-<li><a href="/docs/net/docs/install/docker/">集群</a></li>
+<li><a href="/docs/net/docs/pro/http/">HTTP</a></li>
+<li><a href="/docs/net/docs/pro/https/">HTTPS</a></li>
+<li><a href="/docs/net/docs/pro/dns/">DNS</a></li>
+<li><a href="/docs/net/docs/pro/dhcp/">DHCP</a></li>
+<li><a href="/docs/net/docs/pro/rtsp/">RTSP</a></li>
+<li><a href="/docs/net/docs/pro/rtmp/">RTMP</a></li>
 </ul></li>
-
-<li><p><strong>配置</strong></p>
+<li><strong><em>传输层协议</em></strong>
 
 <ul>
-<li><a href="/docs/net/docs/install/docker/">Docker安装</a></li>
+<li><a href="/docs/net/docs/pro/dhcp/">TCP</a></li>
+<li><a href="/docs/net/docs/pro/dhcp/">UDP</a></li>
+<li><a href="/docs/net/docs/pro/dhcp/">RTP</a></li>
 </ul></li>
+<li><strong><em>网络层协议</em></strong>
 
-<li><p><strong>基础</strong></p></li>
+<ul>
+<li><a href="/docs/net/docs/pro/ip/">IP</a></li>
+</ul></li>
+<li><strong><em>链路层协议</em></strong>
 
-<li><p><strong>使用场景</strong></p></li>
+<ul>
+<li><a href="/docs/net/docs/pro/arp/">ARP</a></li>
+</ul></li>
 </ul>
 
 
@@ -104,16 +114,22 @@ https://github.com/alex-shpak/hugo-book
 <h1 id="计算机网络协议">计算机网络协议</h1>
 
 <blockquote>
-<p><em>计算机网络是基石</em></p>
+<p>基础的web开发，还是服务化的架构都和网络息息相关</p>
 </blockquote>
 
-<h2 id="学什么">学什么</h2>
+<h2 id="引言">引言</h2>
 
-<ul>
-<li>HTTP/HTTPS协议</li>
-<li>TCP协议</li>
-<li>IP协议</li>
-</ul>
+<p>在进入开发工作之前，对于网络方面的知识没有系统的理解，不知道网络到底是什么原理，日常开发中虽然网络的问题不是很常遇到，但是随着学习的深入，很多东西都和网络有关系。</p>
+
+<p>计算机的世界，网络协议是分为四层的<code>TCP/IP协议族</code>，每一层都负责自己的事情。</p>
+
+<p><img src="https://cdn.jaswine.com/Web/Tech-Doc/net/tcp.jpg" alt="计算机网络" /></p>
+
+<p>举一个例子，我浏览一个网页，发送一个<code>HTTPS</code>请求，访问的域名是<code>www.jaswine.com</code>，首先应用层协议会包装好HTTP的内容，HTTP包装了什么内容去<a href="/docs/net/docs/pro/http/">🔗HTTP协议</a>中查看。</p>
+
+<p>但是<code>jaswine.com</code>是一个域名，在他的背后是一个具体的IP地址，那怎么找到具体的IP地址是什么呢？我们使用的我们的域名之前会先向域名管理商添加自己的域名解析信息，我们的域名解析信息会提交到解析域名的服务器上，我们在发送请求后会进行域名解析(DNS解析)，解析我们背后的IP是什么。关于<code>DNS</code>看<a href="/docs/net/docs/pro/dns/">🔗DNS协议</a></p>
+
+<p>上面都是<code>TCP/IP协议族</code>中的应用层协议，上层协议的内容已经包装好了，现在传到传输层，传输层的作用就是构建传输通道，经过三次握手后完成连接。详细看<a href="/docs/net/docs/pro/tcp/">🔗TCP协议</a></p>
 </article>
 
       
@@ -129,7 +145,7 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li><a href="#计算机网络协议">计算机网络协议</a>
 <ul>
-<li><a href="#学什么">学什么</a></li>
+<li><a href="#引言">引言</a></li>
 </ul></li>
 </ul>
 </nav>
